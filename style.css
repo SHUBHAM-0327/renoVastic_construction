@@ -141,7 +141,7 @@
     width: 12px;
     background-color: #f35c27;
     border: 2px solid #f35c27;
-    top: 9px;
+    top: 4px;
     position: relative;
   }
   .heading {
@@ -250,95 +250,35 @@
     margin: 30px 0;
     padding: 30px 0;
   }
-  .image-container{
+  .factory-wrap {
+    display: flex;
+}
+
+.img-wraps {
     position: relative;
-    display: inline-block;
     overflow: hidden;
+    width: 395px;
   }
-  .img-over1{
-    background-color: #030f27;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateX(50px);
-    width: 100%;
-    z-index: 2;
-    padding: 35px 40px 35px 38px;
-    max-width: 500px;
-    transition: all ease 0.3s;
-    transition-delay: 0.07s;
-    height: 100px;
 
-  }
-  .img-over2{
-    background-color: #030f27;
+  .text-wrap {
     position: absolute;
-    left: 0;
     bottom: 0;
-    opacity: 0;
-    transform: translateX(50px);
-    width: 100%;
-    z-index: 2;
-    padding: 35px 40px 35px 38px;
-    max-width: 500px;
-    transition: all ease 0.3s;
-    transition-delay: 0.07s;
-    height: 100px;
-
-  }
-  .img-over3{
-    background-color: #030f27;
-    position: absolute;
     left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateX(50px);
-    width: 100%;
-    z-index: 2;
-    padding: 35px 40px 35px 38px;
-    max-width: 500px;
-    transition: all ease 0.3s;
-    transition-delay: 0.07s;
-    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    width: 395px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+  }
+  .text-wrap p{
+    color: red;
+  }
 
-  }
-  .img-over4{
-    background-color: #030f27;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateX(50px);
-    width: 100%;
-    z-index: 2;
-    padding: 35px 40px 35px 38px;
-    max-width: 500px;
-    transition: all ease 0.1s;
-    transition-delay: 0.04s;
-    height: 100px;
-
-  }
-  /* .image-container:hover .img-over1 {
-    opacity: 1;
-   bottom: 0;
-  } */
- .img-over1:hover{
-    opacity: 1;
-   bottom: 0;
-  }
-  .img-over2:hover{
-    opacity: 1;
-   bottom: 0;
-  }
-  .img-over3:hover{
-    opacity: 1;
-   bottom: 0;
-  }
-  .img-over4:hover{
-    opacity: 1;
-   bottom: 0;
-  }
+  .img-wraps:hover .text-wrap {
+    opacity: 1; /* Make text visible on hover */
+    width: 395px;
+  }    
   .pseudo {
     width: 370px;
     height: 364px;
