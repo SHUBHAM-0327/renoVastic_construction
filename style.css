@@ -260,7 +260,7 @@
     width: 395px;
   }
 
-  .text-wrap {
+  .text-wrap1 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -271,11 +271,11 @@
     opacity: 0; 
     transition: opacity 0.3s ease; 
   }
-  .text-wrap p{
+  .text-wrap1 p{
     color: red;
   }
 
-  .img-wraps:hover .text-wrap {
+  .img-wraps:hover .text-wrap1 {
     opacity: 1; /* Make text visible on hover */
     width: 395px;
   }    
@@ -538,4 +538,7 @@
 .navbar-scrolled .navbar-nav .nav-link  {
   color: black !important;
 
+}
+.news-button button{
+  margin-left: 200px;
 }
